@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Box Form</title>
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .search-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <h2>Search Something</h2>
+    <form action="https://formsubmit.co/s.madhumida33@gmail.com" method="POST">
+      <input type="text" name="search" placeholder="Enter your query..." required>
+      <button type="submit">Submit</button>
+
+      <!-- Optional: Prevent spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Optional: Redirect after submit -->
+      <input type="hidden" name="_next" value="Thank You">
+    </form>
+  </div>
+</body>
+</html>
